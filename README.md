@@ -9,7 +9,6 @@
    - Using _**easy ocr** we retrieve all the text data form the image.
    - The extracted information should include the company name, card holdername, designation, mobile number, email address, website URL, area, city, state,and pin code.
    - Store the data in a Mysql database.
-   - Ability to collect data form the YouTube channels and store them in the data lake by clicking a button.
 
 ---
 
