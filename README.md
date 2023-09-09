@@ -20,6 +20,9 @@
 
 `streamlit run app.py`
 
+#### sample:
+![main window](https://github.com/AJIN-B/Business-Card-Data-Extraction/blob/main/main.png?raw=true)
+
 #### NOTE
 
 - provide your sql user, database name, password.
