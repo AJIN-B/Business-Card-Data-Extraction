@@ -164,7 +164,7 @@ if SELECT == 'Modify':
     with col1:
         id_ = st.number_input("Enter the ID of the entry you want to modify", min_value=1)
         id_ = str(id_)
-
+        
         card_holder = st.text_input("Enter the correct Card Holder Name")
         if not card_holder:
             card_holder = data_frame.loc[data_frame["ID"] == id_, "Name"].item()
@@ -322,7 +322,7 @@ if SELECT == 'Upload & Extract':
         up = st.button('Upload')
         if up:
             image_ = open(root+uploaded_card.name,'rb').read()
-            mycursor.execute("INSERT INTO data_extract (image_id, Name, Designation, Company, Mail, Website, Phone1, Phone2, Area, City, State, Pincode, Image) VALUES(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)",(image_id, name_, designation_, com_name, mail_, website_, phone1_, phone2_, area_, city_, state_, Pincode_, image_)) ##create Tabel
+            mycursor.execute("INSERT IGNORE INTO data_extract (image_id, Name, Designation, Company, Mail, Website, Phone1, Phone2, Area, City, State, Pincode, Image) VALUES(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)",(image_id, name_, designation_, com_name, mail_, website_, phone1_, phone2_, area_, city_, state_, Pincode_, image_)) ##create Tabel
             mydb.commit() 
         
             
