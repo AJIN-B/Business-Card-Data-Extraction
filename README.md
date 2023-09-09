@@ -22,7 +22,9 @@
 
 #### sample:
 ![main window](https://github.com/AJIN-B/Business-Card-Data-Extraction/blob/main/main.png?raw=true)
+
 ![upload](https://github.com/AJIN-B/Business-Card-Data-Extraction/blob/main/up-ext.png?raw=true)
+
 ![modify](https://github.com/AJIN-B/Business-Card-Data-Extraction/blob/main/up.png?raw=true)
 
 #### NOTE
