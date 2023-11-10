@@ -9,7 +9,8 @@ import math
 import numpy as np
 import io
 
-mydb = my_sql.connect(host='localhost',user='root',password='ajinleo',database ='business_card_info') 
+mydb = my_sql.connect(host='localhost',user='root',password='ajinleo',port='3306',
+                      database ='business_card_info') 
 mycursor = mydb.cursor() 
 
 # reader = easyocr.Reader(['ch_sim','en']) # this needs to run only once to load the model into memory
