@@ -1,16 +1,24 @@
-import streamlit as st 
+
 from streamlit_option_menu import option_menu 
 import mysql.connector as my_sql 
+from dotenv import load_dotenv
+import streamlit as st 
 from PIL import Image
 import pandas as pd
-import easyocr
-import re
-import math
 import numpy as np
+import easyocr
+import math
+import re
 import io
+import os
 
-mydb = my_sql.connect(host='localhost',user='root',password='ajinleo',port='3306',
-                      database ='business_card_info') 
+
+load_dotenv()
+
+mydb = my_sql.connect(host=os.getenv('HOST'),user=os.getenv('USER'),
+                      password=os.getenv('PASSWORD'),
+                      port=os.getenv('PORT'),
+                      database =os.getenv('DATABASE_NAME')) 
 mycursor = mydb.cursor() 
 
 # reader = easyocr.Reader(['ch_sim','en']) # this needs to run only once to load the model into memory

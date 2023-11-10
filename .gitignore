@@ -6,3 +6,4 @@
 .venv
 
 # files not using
+trypy.py
