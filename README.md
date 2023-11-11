@@ -112,9 +112,9 @@ DATABASE_NAME="Your DATABASE NAME"
 6. **Run**:
 ```bash
 python -m streamlit run app.py 
-**or** 
+or 
 streamlit run app.py
 ```
 
-After running the command, Streamlit will provide a local URL (usually `http://localhost:8501/`) which you can open in your web browser to access Finsight.
+After running the command, Streamlit will provide a local URL (usually `http://localhost:8501/`) which you can open in your web browser to access application.
 
