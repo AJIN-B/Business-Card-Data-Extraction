@@ -251,9 +251,9 @@ if SELECT == 'Home':
         st.markdown("### Extract the information from the business card image and store in a database")
 
         st.markdown("<h1 style='text-align: left; color: green;'>Overview</h1>", unsafe_allow_html=True)
-        st.markdown("#### This application was developed to that, users can upload an image \
-                    of a business card and extract relevant information from the image.After \
-                        the extracted informations will be upload to the database.") 
+        st.markdown("#### Created a user-friendly application for extracting information from the business card images.\
+            It use the OCR technology to recognize text on business cards . To extract the information from the image **EASY OCR** \
+                library has been used.After the extracted informations will be upload to the database.") 
     
 #st.markdown("<h1 style='text-align: center; color: white;'>BizCardX: Extracting Business Card Data with OCR</h1>", unsafe_allow_html=True)
 
