@@ -130,11 +130,19 @@ def Find_Pincode(allstring):
     string.insert(0,s)
     return string
 
+# SETTING PAGE CONFIGURATIONS
+#icon = Image.open("icon.png")
+st.set_page_config(page_title= "BizCardX: Extracting Business Card Data with OCR",
+                   layout= "wide",
+                   initial_sidebar_state= "expanded",
+                   menu_items={'About': """# This app is created by *AJIN B*!"""})
+st.markdown("<h1 style='text-align: center; color: white;'>BizCardX: Extracting Business Card Data with OCR</h1>", unsafe_allow_html=True)
 
-st.set_page_config(page_title = 'Business Card Data Extraction' , layout='wide')
 
-st.markdown("<h1 style='text-align: center; color: green;'>Business Card Data Extraction</h1>", unsafe_allow_html=True)
-st.markdown("***")
+
+#st.set_page_config(page_title = 'Business Card Data Extraction' , layout='wide')
+#st.markdown("<h1 style='text-align: center; color: green;'>Business Card Data Extraction</h1>", unsafe_allow_html=True)
+#st.markdown("***")
 
 
 SELECT = option_menu( menu_title = None,orientation="horizontal",
@@ -220,34 +228,35 @@ if SELECT == 'Modify':
 
 
 if SELECT == "Contact":
-    aboutme ="I am interested in pursuing a career in data science and waiting for a good opportunity to empower my skills and knowledge.Eagerly to learn and grow in the field of data science\
-              and working towards becoming a professional data scientist."
-    links={
-        "GITHUB": "https://github.com/AJIN-B",
-        "LINKEDIN": "https://www.linkedin.com/in/ajin-b-0851191b0/"}
-    col1, col2= st.columns(2)
-    with col1:
-        st.subheader("Ajin B")
-        st.subheader("Mail : ajinleo9940@gmail.com")
-
-        S=st.columns(len(links))
-        for i, (x, y) in enumerate(links.items()):
-            S[i].write(f"[{x}]({y})")
-    st.markdown("---")
-    st.write(aboutme)
-    st.markdown("---")
+    col1, col2= st.columns([1,7])
+    with col2:
+        st.markdown("<h1 style='text-align: center;'>Hi 👋, I'm Ajin</h1>", unsafe_allow_html=True)
+        st.markdown("- ### I'm currently working as a Assitant Programmer (python,Machine learning,Deep Learning).")
+        st.markdown("- ### I am interested in pursuing a career in data science and waiting for a good opportunity to empower my skills and knowledge.")
+        st.markdown("- ### Eagerly to learn and grow in the field of data science and working towards becoming a professional the field.")
+        st.markdown("- ### You can find me on [LinkedIn](https://www.linkedin.com/in/ajin-b-0851191b0/).")
+        st.markdown("- ### You can reach out to me at ajin.b.edu@gmail.com.")
+        st.markdown("- ### Know about my [experiences](https://docs.google.com/document/d/14__rAIziYlwmE9QPHz9pM05GEBXuiKYj2VHBbQr05WY/edit?usp=sharing).")
+        st.markdown("- ### Actively seeking opportunities to apply my data science skills to contribute to meaningful projects and make a positive impact.")
 
 
 if SELECT == 'Home':
+    #st.markdown("## Motivation : Extract information from business card image and save into a database along with the uploaded image")
     st.markdown("---")
-    st.markdown("### BizCardX: Extracting Business Card Data with OCR")
     
-    st.markdown("#### Motivation : Extract information from business card image and save into a database along with the uploaded image")
-    # st.markdown("> Extract information from business card image and save into a database along with the uploaded image")
-    st.markdown("##### Description")
-    st.markdown("> ##### This application was developed to that, users can upload an image \
-                of a business card and extract relevant information from the image.After \
-                    the extracted informations will be upload to the database.") 
+    cl1,cl2 = st.columns([1,7])
+    
+    with cl2:
+        st.markdown("<h1 style='text-align: left; color: green;'>Motivation </h1>", unsafe_allow_html=True)
+        st.markdown("### Extract the information from the business card image and store in a database")
+
+        st.markdown("<h1 style='text-align: left; color: green;'>Overview</h1>", unsafe_allow_html=True)
+        st.markdown("#### This application was developed to that, users can upload an image \
+                    of a business card and extract relevant information from the image.After \
+                        the extracted informations will be upload to the database.") 
+    
+#st.markdown("<h1 style='text-align: center; color: white;'>BizCardX: Extracting Business Card Data with OCR</h1>", unsafe_allow_html=True)
+
 
 
 if SELECT == 'Upload & Extract':

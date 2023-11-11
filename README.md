@@ -2,13 +2,12 @@
 
 ## Project Descriptions:
 
-#### This application was developed to that, users can upload an image of a business card and extract relevant information from the image.After the extracted informations will be upload to the database.
+#### Developed an Streamlit web application which extracts information from the business cards using Optical Character Recognition (OCR).Using the application the users can upload an image of a business card and extract relevant informations.
 
-- The problem statement is to create a Streamlit application that allows users can upload an image of a business card and extract relevant information:
-   
-   - Using _**easy ocr** we retrieve all the text data form the image.
-   - The extracted information should include the company name, card holdername, designation, mobile number, email address, website URL, area, city, state,and pin code.
-   - Store the data in a Mysql database.
+- Created a Streamlit web application to interact with the user.  
+- To extract the information from the image **EASY OCR** library has been used.
+- The extracted information should include the company name, card holdername, designation, mobile number, email address, website URL, area, city, state,and pin code.
+- Store the data in a Mysql database.
 
 ---
 
@@ -20,12 +19,6 @@
 
 `streamlit run app.py`
 
-#### sample:
-![main window](https://github.com/AJIN-B/Business-Card-Data-Extraction/blob/main/main.png?raw=true)
-
-![upload](https://github.com/AJIN-B/Business-Card-Data-Extraction/blob/main/up-ext.png?raw=true)
-
-![modify](https://github.com/AJIN-B/Business-Card-Data-Extraction/blob/main/up.png?raw=true)
 
 #### NOTE
 
